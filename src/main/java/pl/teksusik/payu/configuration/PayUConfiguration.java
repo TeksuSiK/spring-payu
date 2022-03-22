@@ -10,6 +10,7 @@ public class PayUConfiguration {
     private String clientId;
     private String clientSecret;
     private String authorizationUri;
+    private String orderUri;
 
     public String getPosId() {
         return posId;
@@ -41,5 +42,13 @@ public class PayUConfiguration {
 
     public void setAuthorizationUri(String authorizationUri) {
         this.authorizationUri = authorizationUri;
+    }
+
+    public String getOrderUri() {
+        return orderUri;
+    }
+
+    public void setOrderUri(String orderUri) {
+        this.orderUri = orderUri;
     }
 }

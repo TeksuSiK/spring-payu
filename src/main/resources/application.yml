@@ -4,6 +4,7 @@ spring:
       on-profile: development
 payu:
   authorization_uri: https://secure.snd.payu.com/pl/standard/user/oauth/authorize
+  order_uri: https://secure.snd.payu.com/api/v2_1/orders
 ---
 spring:
   config:
@@ -11,6 +12,7 @@ spring:
       on-profile: production
 payu:
   authorization_uri: https://secure.payu.com/pl/standard/user/oauth/authorize
+  order_uri: https://secure.payu.com/api/v2_1/orders
 ---
 payu:
   pos_id: ${POS_ID}
