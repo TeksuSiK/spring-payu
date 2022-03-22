@@ -11,6 +11,8 @@ public class PayUConfiguration {
     private String clientSecret;
     private String authorizationUri;
     private String orderUri;
+    private String description;
+    private String currency;
 
     public String getPosId() {
         return posId;
@@ -50,5 +52,21 @@ public class PayUConfiguration {
 
     public void setOrderUri(String orderUri) {
         this.orderUri = orderUri;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }
