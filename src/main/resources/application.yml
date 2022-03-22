@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+payu:
+  authorization_uri: https://secure.snd.payu.com/pl/standard/user/oauth/authorize
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+payu:
+  authorization_uri: https://secure.payu.com/pl/standard/user/oauth/authorize
+---
+payu:
+  pos_id: ${POS_ID}
+  client_id: ${CLIENT_ID}
+  client_secret: ${CLIENT_SECRET}
