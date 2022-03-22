@@ -29,4 +29,11 @@ public class Order {
     public void setProducts(List<Product> products) {
         this.products = products;
     }
+
+    public String getTotalPrice() {
+        int totalPrice = this.getProducts().stream()
+                .mapToInt(Product::getPrice)
+                .sum();
+        return String.valueOf(totalPrice);
+    }
 }

@@ -39,4 +39,8 @@ public class Product {
     public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
+
+    public Integer getPrice() {
+        return Integer.parseInt(this.getUnitPrice()) * Integer.parseInt(this.getQuantity());
+    }
 }
